@@ -27,7 +27,7 @@
          TextColor="Black"
          Clicked="BTNHome_Clicked"
          Grid.Column="0"
-         Grid.Row="2"/>
+         Grid.Row="2"/>   
 
         
     </Grid>

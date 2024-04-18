@@ -29,6 +29,8 @@
           Grid.Column="0"
           Grid.Row="2"/>
 
+        <Label/>
+
         <Button x:Name="FaktBTN"
          Text="Nová faktura"
          HorizontalOptions="Center"
