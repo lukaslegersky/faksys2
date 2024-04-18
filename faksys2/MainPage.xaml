@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="faksys2.MainPage"
+             BackgroundColor="White">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+
+
+        <Label Grid.Column="1"
+                Text="Fakturační Systém"
+                FontSize="32"
+                HorizontalOptions="Center"
+                VerticalOptions="Start"
+                TextColor="Black"/>
+
+        <StackLayout Grid.Row="1" Grid.ColumnSpan="3"
+                      Spacing="6">
+
+            <Button x:Name="BTN1"
+                 Text="Evidence přijatých faktur"
+                 HorizontalOptions="Center"
+                 WidthRequest="300"
+                 BackgroundColor="Blue"
+                 TextColor="Black"
+                 Clicked="BTN1_Clicked"/>
+
+            <Button x:Name="BTN2"
+                 Text="Evidence vystavených faktur"
+                 HorizontalOptions="Center"
+                 WidthRequest="300"
+                  BackgroundColor="Blue"
+                 TextColor="Black"
+                 Clicked="BTN2_Clicked"/>
+
+            <Button x:Name="BTN3"
+                 Text="Evidence Odběratelů"
+                 HorizontalOptions="Center"
+                 WidthRequest="300"
+                  BackgroundColor="Blue"
+                 TextColor="Black"
+                 Clicked="BTN3_Clicked"/>
+
+            <Button x:Name="BTN4"
+                 Text="Evidence dodavatelů"
+                 HorizontalOptions="Center"
+                 WidthRequest="300"
+                  BackgroundColor="Blue"
+                 TextColor="Black"
+                 Clicked="BTN4_Clicked"/>
+
+            <Button x:Name="BTN5"
+                    Text="Nová Faktura"
+                    HorizontalOptions="Center"
+                    WidthRequest="300"
+                    BackgroundColor="Blue"
+                    TextColor="Black"
+                    Clicked="BTN5_Clicked"/>
+
+
+
+
+        </StackLayout>
+
+
+
+    </Grid>
+
+
+
+</ContentPage>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="faksys2.pages.SecondPage"
+             Title="SecondPage"
+             BackgroundColor="AliceBlue">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BTN1"
+         Text="DOMŮ"
+         HorizontalOptions="Center"
+         VerticalOptions="Center"
+         WidthRequest="100"
+         HeightRequest="50"
+         BackgroundColor="Blue"
+         TextColor="Black"
+         Clicked="BTN1_Clicked"
+         Grid.Column="0"
+         Grid.Row="2"/>
+
+        <Button x:Name="FaktBTN"
+         Text="Nová faktura"
+         HorizontalOptions="Center"
+         VerticalOptions="Center"
+         WidthRequest="150"
+         HeightRequest="50"
+         BackgroundColor="Blue"
+         TextColor="Black"
+         Grid.Column="2"
+         Grid.Row="1"
+         Clicked="FaktBTN_Clicked"/>
+
+
+        <Entry x:Name="Odberatel"
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Placeholder="Odběratel"
+            TextColor="Black"              
+            HeightRequest="50"
+            WidthRequest="100"
+            Grid.Column="0"
+            Grid.Row="1"/>
+
+
+        <Entry x:Name="Typpolozky"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Placeholder="Typ položky"
+            TextColor="Black"
+            HeightRequest="50"
+            WidthRequest="100"
+            Grid.Column="0"
+            Grid.Row="1"/>
+
+        <Entry x:Name="Cena"                  
+            HorizontalOptions="End"
+            VerticalOptions="Start"
+            Placeholder="Cena"
+            TextColor="Black"
+            HeightRequest="50"
+            WidthRequest="100"
+            Grid.Column="0"
+            Grid.Row="1"/>
+
+        <Entry x:Name="Zplatnost"                  
+            HorizontalOptions="Start"
+            VerticalOptions="Start"
+            Placeholder="Zplatnost"
+            TextColor="Black"
+            HeightRequest="50"
+            WidthRequest="100"
+            Grid.Column="1"
+            Grid.Row="1"/>
+
+        <ListView x:Name="ListKomu"
+               BackgroundColor="Gray"
+               WidthRequest="600"
+               HeightRequest="200"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               Grid.Row="2"
+               Grid.Column="1"/>
+
+        <Button x:Name="Add2BTN"
+         Text="Přidat"
+         WidthRequest="100"
+         HeightRequest="50"
+         VerticalOptions="Start"
+         HorizontalOptions="Center"
+         BackgroundColor="Yellow"
+         TextColor="Black"
+         Clicked="Add2BTN_Clicked"        
+         Grid.Column="1"
+         Grid.Row="1"/>
+
+        <Button x:Name="Smazat2BTN"
+         Text="Smazat"
+         WidthRequest="100"
+         HeightRequest="50"
+         VerticalOptions="Start"
+         HorizontalOptions="End"
+         BackgroundColor="Red"
+         TextColor="Black"
+         Clicked="Smazat2BTN_Clicked"               
+         Grid.Column="1"
+         Grid.Row="1"/>
+
+    </Grid>
+
+
+</ContentPage>

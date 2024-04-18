@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="faksys2.pages.PdfPage"
+             Title="PdfPage"
+             BackgroundColor="AliceBlue">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BTNHome"
+         Text="DOMŮ"
+         HorizontalOptions="Center"
+         VerticalOptions="Center"
+         WidthRequest="100"
+         HeightRequest="50"
+         BackgroundColor="Green"
+         TextColor="Black"
+         Clicked="BTNHome_Clicked"
+         Grid.Column="0"
+         Grid.Row="2"/>
+
+        
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="faksys2.pages.FourthPage"
+             Title="FourthPage"
+             BackgroundColor="AliceBlue">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="BTNHome"
+       Text="DOMŮ"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"
+       WidthRequest="100"
+       HeightRequest="50"
+       BackgroundColor="Blue"
+       TextColor="Black"
+       Clicked="BTNHome_Clicked"
+       Grid.Column="0"
+       Grid.Row="2"/>
+
+        <Button x:Name="FaktBTN"
+        Text="Nová faktura"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"
+        WidthRequest="150"
+        HeightRequest="50"
+        BackgroundColor="Blue"
+        TextColor="Black"
+        Grid.Column="2"
+        Grid.Row="1"
+        Clicked="FaktBTN_Clicked"/>
+
+
+        <Entry x:Name="Dodavatel"
+          HorizontalOptions="Start"
+          VerticalOptions="Start"
+          Placeholder="Název Dodavatele"
+          TextColor="Black"              
+          HeightRequest="50"
+          WidthRequest="150"
+          Grid.Column="0"
+          Grid.Row="1"/>
+
+
+        <Entry x:Name="Adresa"
+          HorizontalOptions="Center"
+          VerticalOptions="Start"
+          Placeholder="Adresa"
+          TextColor="Black"
+          HeightRequest="50"
+          WidthRequest="100"
+          Grid.Column="0"
+          Grid.Row="1"/>
+
+        <Entry x:Name="ICO"                  
+          HorizontalOptions="End"
+          VerticalOptions="Start"
+          Placeholder="IČ"
+          TextColor="Black"
+          HeightRequest="50"
+          WidthRequest="100"
+          Grid.Column="0"
+          Grid.Row="1"/>
+
+        <Entry x:Name="DIC"                  
+          HorizontalOptions="Start"
+          VerticalOptions="Start"
+          Placeholder="DIČ"
+          TextColor="Black"
+          HeightRequest="50"
+          WidthRequest="100"
+          Grid.Column="1"
+          Grid.Row="1"/>
+
+        <Entry x:Name="Tel"                  
+            HorizontalOptions="Center"   
+            VerticalOptions="Start"
+            Placeholder="Telefon"
+            TextColor="Black"
+            HeightRequest="50"
+            WidthRequest="100"
+            Grid.Column="1"
+            Grid.Row="1"/>
+
+        <Entry x:Name="Mail"                  
+            HorizontalOptions="End"   
+            VerticalOptions="Start"
+            Placeholder="E-mail"
+            TextColor="Black"
+            HeightRequest="50"
+            WidthRequest="100"
+            Grid.Column="1"
+            Grid.Row="1"/>
+
+        <Entry x:Name="CU"                  
+            HorizontalOptions="Start"   
+            VerticalOptions="Start"
+            Placeholder="Číslo účtu"
+            TextColor="Black"
+            HeightRequest="50"
+            WidthRequest="100"
+            Grid.Column="2"
+            Grid.Row="1"/>
+
+
+        <ListView x:Name="OdberatelList"
+             BackgroundColor="Gray"
+             WidthRequest="600"
+             HeightRequest="200"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             Grid.Row="2"
+             Grid.Column="1"/>
+
+        <Button x:Name="AddBTN"
+       Text="Přidat"
+       WidthRequest="100"
+       HeightRequest="50"
+       VerticalOptions="Start"
+       HorizontalOptions="Center"
+       BackgroundColor="Yellow"
+       TextColor="Black"
+       Clicked="AddBTN_Clicked"              
+       Grid.Column="2"
+       Grid.Row="1"/>
+
+        <Button x:Name="SmazatBTN"
+       Text="Smazat"
+       WidthRequest="100"
+       HeightRequest="50"
+       VerticalOptions="Start"
+       HorizontalOptions="End"
+       BackgroundColor="Red"
+       TextColor="Black"
+       Clicked="SmazatBTN_Clicked"            
+       Grid.Column="2"
+       Grid.Row="1"/>
+
+    </Grid>
+
+
+</ContentPage>
